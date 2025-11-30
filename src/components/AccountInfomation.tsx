@@ -5,7 +5,7 @@ const AccountInfomation = () => {
   const navigate = useNavigate();
   const [isUpdate, setUpdate] = useState(false);
   return (
-    <div className="ml-10 md:ml-85 lg:ml-95 mr-10 2xl:mr-18 w-full max-w-[959px] max-h-[837px] border border-n-4 rounded-2xl shadow-boder px-7 py-4 mx-18">
+    <div className="overflow-auto ml-10 md:ml-85 lg:ml-95 mr-10 2xl:mr-18 w-full max-w-[959px] max-h-[837px] border border-n-4 rounded-2xl shadow-boder px-7 py-4 mx-18">
       <div className="flex justify-between items-center">
         <h2 className="logo text-2xl underline underline-offset-4 decoration-2 decoration-primary">
           Account Information
@@ -80,7 +80,7 @@ const AccountInfomation = () => {
                 id="position"
               />
             </div>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-1">
+            <div className="mt-8 flex gap-4 flex-wrap justify-center sm:justify-start sm:gap-1">
               {isUpdate ? (
                 <button className="text-sm bg-foreign rounded-md px-6 py-2">
                   Save Change

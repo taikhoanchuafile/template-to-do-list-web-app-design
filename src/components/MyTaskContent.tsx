@@ -15,7 +15,7 @@ const MyTaskContent = () => {
         </div>
       </div>
       {/* phan 2 */}
-      <div className="relative px-5 py-4 rounded-base shadow-border border border-n-4 2xl:max-w-[511px] max-h-[837px]">
+      <div className="relative px-5 py-4 rounded-base shadow-border border border-n-4 2xl:max-w-[511px] max-h-[837px] overflow-auto">
         <div className="flex gap-4">
           <img className="size-40" src="Rectangle-10.svg" alt="Rectangle-10" />
           <div className="space-y-4 mt-16">

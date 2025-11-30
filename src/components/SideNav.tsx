@@ -32,7 +32,7 @@ const SideNav = () => {
     },
   ];
   return (
-    <div className="absolute z-10 inset-0 max-w-[250px] lg:max-w-[330px] p-5 bg-primary text-n-1 -translate-x-full opacity-0 md:translate-x-0 md:opacity-100 peer-focus:translate-x-0 peer-focus:opacity-100 transition-all duration-500">
+    <div className="absolute z-10 inset-0  max-w-[250px] lg:max-w-[330px] p-5 bg-primary text-n-1 -translate-x-full opacity-0 md:translate-x-0 md:opacity-100 peer-focus:translate-x-0 peer-focus:opacity-100 transition-all duration-500">
       {/* avatar */}
       <a href="/accountinformation">
         <div className="w-fit absolute left-1/2 -translate-x-1/2 top-7 -translate-y-1/2 flex flex-col gap-3 items-center logo ">
@@ -69,10 +69,12 @@ const SideNav = () => {
         </ul>
       </nav>
       <button className="absolute p-4 bottom-8 left-5" type="button">
-        <div className="flex gap-4 items-center">
-          <img src="/iconLogout.svg" alt="icon logout" />
-          Logout
-        </div>
+        <a href="/signin">
+          <div className="flex gap-4 items-center">
+            <img src="/iconLogout.svg" alt="icon logout" />
+            Logout
+          </div>
+        </a>
       </button>
     </div>
   );

@@ -13,8 +13,8 @@ const DashboardContent = () => {
   return (
     <div className="md:ml-90 px-10 xl:px-19 pb-8 flex flex-col gap-8">
       {/* Header */}
-      <div className="flex justify-end lg:justify-between">
-        <div className="hidden lg:flex gap-4">
+      <div className="flex justify-end sm:justify-between">
+        <div className="hidden sm:flex gap-4">
           <h1 className="font-inter font-medium text-4xl leading-8 tracking-normal whitespace-nowrap">
             Welcome back, Sundar
           </h1>
@@ -23,22 +23,22 @@ const DashboardContent = () => {
         <div className="flex items-center gap-4">
           <div className="flex gap-1 relative">
             <img
-              className="size-9 lg:hidden xl:inline"
+              className="size-9 hidden xl:inline"
               src="/a1.svg"
               alt="avatar 1"
             />
             <img
-              className="size-9  lg:hidden xl:inline"
+              className="size-9  hidden xl:inline"
               src="/a2.svg"
               alt="avatar 1"
             />
             <img
-              className="size-9  lg:hidden xl:inline"
+              className="size-9  hidden xl:inline"
               src="/a3.svg"
               alt="avatar 1"
             />
             <img
-              className="size-9 lg:hidden xl:inline"
+              className="size-9 hidden xl:inline"
               src="/a4.svg"
               alt="avatar 1"
             />
@@ -309,10 +309,10 @@ const DashboardContent = () => {
       </Modal>
 
       {/* Content */}
-      <div className="px-6 py-5 border border-n-4 shadow-boder">
-        <div className="flex flex-col gap-3 xl:flex-row">
+      <div className="overflow-auto px-6 py-5 border border-n-4 shadow-boder">
+        <div className="flex flex-col-reverse gap-3 xl:flex-row">
           {/* left */}
-          <div className="shadow-border-0 rounded-menu lg:order-1 xl:order-0">
+          <div className="shadow-border-0 rounded-menu ">
             <div className="flex gap-4 flex-col px-6 pt-5 pb-9">
               <div className="flex flex-col gap-2">
                 <div className="flex justify-between">
@@ -358,9 +358,9 @@ const DashboardContent = () => {
           </div>
 
           {/* right */}
-          <div className="flex flex-col gap-5 ">
+          <div className="flex flex-col gap-5">
             {/* phần đầu */}
-            <div className="p-6 space-y-2 shadow-border-0 rounded-menu w-full xl:max-w-[426px] max-h-[263px] hidden lg:block">
+            <div className="p-6 space-y-2 shadow-border-0 rounded-menu xl:max-w-[426px] sm:max-h-[263px]">
               <div className="text-primary flex gap-2 items-center text-inter-500">
                 <img
                   className="size-7"

@@ -6,14 +6,16 @@ const Home = () => {
   return (
     <div className="relative overflow-auto bg-n-1 w-full h-full">
       <NavBar />
-      <div className="relative flex justify-end mt-35 h-full">
-        <button className="bg-n-1 p-0 flex flex-col gap-1 items-start peer mt-2 ml-10 md:hidden ">
+      <div className="relative mt-35 h-full">
+        <button className="fixed z-10 left-5 top-1/9 bg-n-1 p-0 flex flex-col gap-1 items-start peer md:hidden">
           <div className="w-5 h-1 bg-black border border-black"></div>
           <div className="w-5 h-1 bg-black border border-blackborder border-black"></div>
           <div className="w-5 h-1 bg-black border border-black"></div>
         </button>
         <SideNav />
-        <Outlet></Outlet>
+        <div className="pb-4 flex justify-end h-full">
+          <Outlet></Outlet>
+        </div>
       </div>
     </div>
   );

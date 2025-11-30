@@ -59,7 +59,7 @@ const ChangePassword = () => {
               />
             </div>
 
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-1">
+            <div className="mt-8 flex flex-wrap justify-center sm:justify-start gap-1">
               <button
                 onClick={(e) => {
                   navigate("/accountinformation");

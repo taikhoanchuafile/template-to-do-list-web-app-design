@@ -10,16 +10,16 @@ const ProgressBar = () => {
   const circumference = 2 * Math.PI * radius;
 
   return (
-    <div className="w-full flex items-center justify-center gap-4 xl:gap-1">
+    <div className="w-full flex flex-col sm:flex-row items-center justify-center gap-4 xl:gap-1">
       {data.map((item) => {
         const offset = circumference - (item.value / 100) * circumference;
 
         return (
           <div
             key={item.label}
-            className="flex flex-col shrink-0 items-center relative"
+            className="flex gap-4 sm:gap-0 sm:flex-col flex-1 items-center relative"
           >
-            <svg className="-rotate-90 size-35">
+            <svg className="-rotate-90 size-40 lg:size-35">
               {/* Background circle */}
               <circle
                 cx="65"
@@ -46,7 +46,7 @@ const ProgressBar = () => {
             </svg>
 
             {/* Percentage number */}
-            <div className="absolute top-[45%] -translate-y-1/2 text-xl font-semibold text-gray-900">
+            <div className="absolute top-[45%] -translate-y-1/2 left-1/3 sm:left-1/2 -translate-x-1/2  text-xl font-semibold text-gray-900">
               {item.value}%
             </div>
 

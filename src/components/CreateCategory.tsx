@@ -25,7 +25,7 @@ const CreateCategory = () => {
             type="text"
           />
         </div>
-        <div className="mt-8 flex gap-1">
+        <div className="mt-8 flex gap-1 flex-wrap">
           <button
             onClick={(e) => {
               navigate("/taskcategory");

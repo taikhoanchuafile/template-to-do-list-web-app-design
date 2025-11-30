@@ -2,7 +2,7 @@ import CardTodo from "./CardTodo";
 
 const VitalTaskContent = () => {
   return (
-    <div className="md:ml-80 lg:ml-90 px-10 2xl:px-19  max-w-[1075px] flex flex-col 2xl:flex-row gap-4">
+    <div className="md:ml-80 lg:ml-90 px-10 2xl:px-19 max-w-[1075px] flex flex-col 2xl:flex-row gap-4">
       {/* phan 1 */}
       <div className="px-7 py-5 rounded-base shadow-border border border-n-4  2xl:max-w-[423px] max-h-[837px]">
         <h2 className="sub-text font-semibold underline underline-offset-4 decoration-primary decoration-2">
@@ -15,7 +15,7 @@ const VitalTaskContent = () => {
         </div>
       </div>
       {/* phan 2 */}
-      <div className="relative px-5 py-4 rounded-base shadow-border border border-n-4 2xl:max-w-[511px] max-h-[837px]">
+      <div className="relative px-5 py-4 rounded-base shadow-border border border-n-4 2xl:max-w-[511px] max-h-[837px] overflow-auto">
         <div className="flex gap-4">
           <img className="size-40" src="Rectangle-10.svg" alt="Rectangle-10" />
           <div className="space-y-4 mt-16">

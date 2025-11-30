@@ -8,11 +8,11 @@ const TaskCategory = () => {
   const [model, setModel] = useState("add");
   const [category, setCategory] = useState("status");
   return (
-    <div className="ml-10 md:ml-85 lg:ml-95 mr-10 2xl:mr-18 w-full max-w-[959px] max-h-[837px] border border-n-4 rounded-2xl shadow-boder">
+    <div className="ml-15 md:ml-90 lg:ml-100 mr-5 overflow-auto 2xl:mr-18 w-full h-full max-w-[959px] max-h-[837px] border border-n-4 rounded-2xl shadow-boder">
       {/* dialog priority*/}
       <Modal open={openNewTask} onClose={() => setOpenNewTask(false)}>
         <div
-          className="flex flex-col bg-n-1 rounded-button shadow-border-0 px-15 py-12 sm:w-full sm:h-full max-w-[500px] max-h-[500px] lg:max-w-[918px] lg:max-h-[708px]"
+          className="flex flex-col bg-n-1 rounded-button shadow-border-0 px-15 py-12 size-[90%]  lg:max-w-[918px] lg:max-h-[708px]"
           onClick={(e) => e.stopPropagation()} // chặn click xuyên
         >
           <div className="flex justify-between items-center">
@@ -42,7 +42,7 @@ const TaskCategory = () => {
                   type="text"
                 />
               </div>
-              <div className="mt-8 flex gap-1">
+              <div className="mt-8 flex justify-center sm:justify-start gap-1 flex-wrap">
                 <button
                   onClick={(e) => {
                     setOpenNewTask(false);
