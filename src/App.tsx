@@ -11,8 +11,6 @@ import ChangePassword from "./components/ChangePassword";
 import ViewTask from "./components/ViewTask";
 import TaskCategory from "./components/TaskCategory";
 import CreateCategory from "./components/CreateCategory";
-import ProtectedUser from "./middlewares/ProtectedUser";
-
 const router = createBrowserRouter([
   {
     path: "/",
