@@ -11,6 +11,7 @@ import ChangePassword from "./components/ChangePassword";
 import ViewTask from "./components/ViewTask";
 import TaskCategory from "./components/TaskCategory";
 import CreateCategory from "./components/CreateCategory";
+import ProtectedUser from "./middlewares/ProtectedUser";
 
 const router = createBrowserRouter([
   {
@@ -18,20 +19,28 @@ const router = createBrowserRouter([
     element: <AppRoutes />,
     children: [
       {
-        path: "",
-        element: <Home />,
+        element: <ProtectedUser />,
         children: [
-          { path: "", element: <DashboardContent /> },
           {
-            path: "vitaltask",
-            element: <VitalTaskContent />,
+            path: "",
+            element: <Home />,
+            children: [
+              { path: "", element: <DashboardContent /> },
+              {
+                path: "vitaltask",
+                element: <VitalTaskContent />,
+              },
+              { path: "mytask", element: <MyTaskContent /> },
+              {
+                path: "accountinformation",
+                element: <AccountInfomation />,
+              },
+              { path: "changepassword", element: <ChangePassword /> },
+              { path: "viewtask", element: <ViewTask /> },
+              { path: "taskcategory", element: <TaskCategory /> },
+              { path: "createcategory", element: <CreateCategory /> },
+            ],
           },
-          { path: "mytask", element: <MyTaskContent /> },
-          { path: "accountinformation", element: <AccountInfomation /> },
-          { path: "changepassword", element: <ChangePassword /> },
-          { path: "viewtask", element: <ViewTask /> },
-          { path: "taskcategory", element: <TaskCategory /> },
-          { path: "createcategory", element: <CreateCategory /> },
         ],
       },
       { path: "signup", element: <SignUp /> },
