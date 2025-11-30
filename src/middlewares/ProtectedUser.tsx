@@ -5,8 +5,6 @@ const ProtectedUser = () => {
   const isLogin = useStateStore((state) => state.isLogin);
 
   if (!isLogin) {
-    console.log("protected:", isLogin);
-
     return <Navigate to="/signin" replace></Navigate>;
   }
   return <Outlet></Outlet>;
