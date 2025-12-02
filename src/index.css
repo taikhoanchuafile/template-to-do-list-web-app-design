@@ -51,7 +51,7 @@
 
 @layer utilities {
   .container {
-    @apply m-auto w-full max-w-[1536px] h-screen max-h-[1100px] flex items-center justify-center xl:px-8 py-4;
+    @apply m-auto w-full max-w-[1536px] h-screen max-h-[1100px] flex items-center justify-center xl:px-8;
   }
 }
 @layer components {

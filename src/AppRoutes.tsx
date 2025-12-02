@@ -9,7 +9,7 @@ const AppRoutes = () => {
         alt="bg-body"
       />
       <div className="container">
-        <div className="w-full h-full max-w-[1440px] max-h-[1024px]">
+        <div className="w-full h-full max-w-[1440px]">
           <Outlet></Outlet>
         </div>
       </div>

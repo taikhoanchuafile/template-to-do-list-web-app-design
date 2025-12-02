@@ -312,7 +312,7 @@ const DashboardContent = () => {
       </Modal>
 
       {/* Content */}
-      <div className="overflow-auto px-6 py-5 border border-n-4 shadow-boder">
+      <div className="px-6 py-5 border border-n-4 shadow-boder">
         <div className="flex flex-col-reverse gap-3 xl:flex-row">
           {/* left */}
           <div className="shadow-border-0 rounded-menu ">
