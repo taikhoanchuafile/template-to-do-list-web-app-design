@@ -4,7 +4,7 @@ const ChangePassword = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="ml-10 md:ml-85 lg:ml-95 mr-10 2xl:mr-18 w-full max-w-[959px] max-h-[837px] border border-n-4 rounded-2xl shadow-boder px-7 py-4 mx-18">
+    <div className="ml-10 md:ml-85 lg:ml-95 mr-10 2xl:mr-18 w-full h-fit max-w-[959px] max-h-[837px] border border-n-4 rounded-2xl shadow-boder px-7 py-4 mx-18">
       <div className="flex justify-between items-center">
         <h2 className="logo text-2xl underline underline-offset-4 decoration-2 decoration-primary">
           Change Password

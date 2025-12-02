@@ -8,7 +8,7 @@ const TaskCategory = () => {
   const [model, setModel] = useState("add");
   const [category, setCategory] = useState("status");
   return (
-    <div className="ml-15 md:ml-90 lg:ml-100 mr-5 2xl:mr-18 w-full h-full max-w-[959px] max-h-[837px] border border-n-4 rounded-2xl shadow-boder">
+    <div className=" ml-15 md:ml-90 lg:ml-100 mr-5 2xl:mr-18 w-full h-fit max-w-[959px] max-h-[837px] border border-n-4 rounded-2xl shadow-boder">
       {/* dialog priority*/}
       <Modal open={openNewTask} onClose={() => setOpenNewTask(false)}>
         <div

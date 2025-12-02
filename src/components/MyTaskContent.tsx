@@ -2,7 +2,7 @@ import CardTodo from "./CardTodo";
 
 const MyTaskContent = () => {
   return (
-    <div className="md:ml-80 lg:ml-90 px-10 2xl:px-19 max-w-[1075px] flex flex-col 2xl:flex-row gap-4">
+    <div className=" h-fit md:ml-80 lg:ml-90 px-10 2xl:px-19 max-w-[1075px] flex flex-col 2xl:flex-row gap-4">
       {/* phan 1 */}
       <div className="px-7 py-5 rounded-base shadow-border border border-n-4 2xl:max-w-[423px] max-h-[837px]">
         <h2 className="sub-text font-semibold underline underline-offset-4 decoration-primary decoration-2">

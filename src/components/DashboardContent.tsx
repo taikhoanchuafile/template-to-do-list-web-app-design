@@ -11,7 +11,7 @@ const DashboardContent = () => {
   const [model, setModel] = useState("add");
 
   return (
-    <div className="md:ml-90 px-10 xl:px-19 pb-8 flex flex-col gap-8">
+    <div className="h-fit md:ml-90 px-10 xl:px-19 pb-8 flex flex-col gap-8">
       {/* Header */}
       <div className="flex justify-end sm:justify-between">
         <div className="hidden sm:flex gap-4">
