@@ -1,6 +1,6 @@
 const ViewTask = () => {
   return (
-    <div className="relative md:ml-100 mx-19 p-6 w-full  max-w-[959px] max-h-[837px] border border-n-4 shadow-boder">
+    <div className="relative md:ml-100 mx-19 p-6 w-full h-fit max-w-[959px] max-h-[837px] border border-n-4 shadow-boder">
       <div className="flex gap-4">
         <img className="size-53" src="Rectangle-10.svg" alt="Rectangle-10" />
         <div className="space-y-4">

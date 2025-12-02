@@ -187,7 +187,7 @@ const DashboardContent = () => {
       {/* diablog add new task */}
       <Modal open={openNewTask} onClose={() => setOpenNewTask(false)}>
         <div
-          className="bg-n-1 rounded-button shadow-border-0 p-6 sm:px-15 sm:py-12 w-full h-full max-w-[918px] max-h-[708px]"
+          className="bg-n-1 rounded-button shadow-border-0 p-6 sm:px-15 sm:py-12 w-full h-fit max-w-[918px] max-h-[708px] overflow-auto"
           onClick={(e) => e.stopPropagation()} // chặn click xuyên
         >
           <div className="flex justify-between items-center">
