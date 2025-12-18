@@ -64,7 +64,7 @@ src/
 
 1. Phân tích layout từ Figma
 2. Xác định: Color palette + Font size & spacing + Component tái sử dụng
-3. Custom Tailwind theme (tailwind.config.js)
+3. Custom Tailwind theme (@theme trực tiếp trong index.css)
 4. Code từng màn hình theo thiết kế
 5. Responsive & pixel-perfect (ở mức hợp lý)
 
