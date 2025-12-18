@@ -1,73 +1,93 @@
-# React + TypeScript + Vite
+# 🎨 Figma UI to TailwindCSS (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Giới thiệu
 
-Currently, two official plugins are available:
+Dự án này được xây dựng với mục tiêu **chuyển đổi (slicing) giao diện từ Figma sang mã nguồn HTML/CSS**, sử dụng:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **ReactJS + Vite**
+- **TailwindCSS**
+- Code **thuần UI**, không tập trung xử lý business logic
 
-## React Compiler
+Mục tiêu chính:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> Hiện thực giao diện Figma **giống thiết kế nhất có thể**, tuân thủ layout, màu sắc, typography và spacing.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Công nghệ sử dụng
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- ⚛️ **ReactJS**
+- ⚡ **Vite**
+- 🎨 **TailwindCSS**
+- 🧩 **Figma** (Design source)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🎯 Phạm vi dự án
+
+- Chỉ tập trung **UI / Layout**
+- Không có:
+  - Authentication
+  - API / Backend
+  - State management phức tạp
+- Dữ liệu hiển thị là **static (hard-code)**
+
+---
+
+## 🖼️ Nguồn thiết kế
+
+- Figma Design:  
+  👉 https://www.figma.com/design/C5UzDP59hB71DieTguRpRz/To-do-List-Web-App-Design--Community-?node-id=16-34&p=f&t=q0K9Ia1YEukiZn3V-0
+
+---
+
+## 📂 Cấu trúc thư mục
+
+```txt
+src/
+├─ components/    # Các component UI nhỏ
+├─ utils/         # Các thư viện UI nhỏ
+├─ pages/         # Các trang UI theo từng màn hình Figma
+├─ AppRoutes.tsx  # Điều hướng router
+├─ App.tsx
+└─ main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🎨 Quy ước code & UI
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Sử dụng TailwindCSS utility-first
+- Không dùng thư viện UI ngoài (MUI, Antd, v.v.)
+- Màu sắc & font được map theo thiết kế Figma
+- Responsive theo breakpoint:Mobile/Tablet/Desktop
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📐 Quy trình thực hiện
+
+1. Phân tích layout từ Figma
+2. Xác định: Color palette + Font size & spacing + Component tái sử dụng
+3. Custom Tailwind theme (tailwind.config.js)
+4. Code từng màn hình theo thiết kế
+5. Responsive & pixel-perfect (ở mức hợp lý)
+
+## 🚀 Cách chạy project
+
+```base
+npm install
+npm run dev
 ```
+
+- Truy cập:
+  👉 http://localhost:5173
+
+## 📸 Demo
+
+- Live Demo: https://template-to-do-list-web-app-design.vercel.app
+
+## 📝 Ghi chú
+
+- Dự án phục vụ mục đích luyện tập Frontend & TailwindCSS
+- Thiết kế thuộc về tác giả trên Figma
+- Không sử dụng cho mục đích thương mại
+
+## 📄 License
+
+Dự án phát hành theo giấy phép [MIT](./LICENSE).

@@ -16,9 +16,6 @@ const router = createBrowserRouter([
     path: "/",
     element: <AppRoutes />,
     children: [
-      // {
-      //   element: <ProtectedUser />,
-      //   children: [
       {
         path: "",
         element: <Home />,
@@ -39,8 +36,6 @@ const router = createBrowserRouter([
           { path: "createcategory", element: <CreateCategory /> },
         ],
       },
-      // ],
-      // },
       { path: "signup", element: <SignUp /> },
       { path: "signin", element: <SignIn /> },
     ],

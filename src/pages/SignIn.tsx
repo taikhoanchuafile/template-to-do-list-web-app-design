@@ -1,23 +1,10 @@
-import type { FormEvent } from "react";
-import { useStateStore } from "../stores/StateStore";
-import { useNavigate } from "react-router";
-
 const SignIn = () => {
-  const setIsLogin = useStateStore((state) => state.setIsLogin);
-  const navigate = useNavigate();
-
-  const handleLogin = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsLogin(true);
-    navigate("/");
-  };
-
   return (
     <div className="w-full h-full relative bg-[url(/bg-signup.webp)] bg-center bg-cover bg-no-repeat flex items-center justify-center rounded-card-0">
       <div className="bg-primary absolute inset-0 opacity-92 rounded-card-0"></div>
       <div className="relative z-10 p-12  bg-n-1 shadow-border-0 w-full max-w-[1236px] h-full max-h-[767px] flex gap-2 items-center rounded-card-0">
         <div className="overflow-auto w-full space-y-17 md:max-w-[559px] h-full max-h-[474px]">
-          <form onSubmit={(e) => handleLogin(e)}>
+          <form action="/">
             <div className="space-y-6">
               <h1>Sign In</h1>
               <div className="input-wrapper">
@@ -81,7 +68,6 @@ const SignIn = () => {
             </p>
           </div>
         </div>
-        {/* <div className="md:flex hidden flex-1 items-end"></div> */}
         <div className="md:flex hidden absolute -bottom-12 right-3 md:opacity-20 xl:opacity-100 -z-10">
           <img
             className="size-153 max-h-[90%]"
